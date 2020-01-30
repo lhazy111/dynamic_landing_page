@@ -7,11 +7,11 @@ const time = document.getElementById('time'),
 
  function showTime(){
      let today = new Date(),
-        hour = today.getHours(),
+        hours = today.getHours(),
         min = today.getMinutes(),
         sec = today.getSeconds();
 
-        time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`
+        time.innerHTML = `${hours}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`
          setTimeout(showTime, 1000);
  }
 
